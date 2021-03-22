@@ -178,8 +178,9 @@ function Register(props) {
           );
           }}
         </Formik>
+        <br/>
         {loginErrorMessage ? <div className="alert alert-danger" role="alert">
-         Username or password is incorrect.
+         {loginErrorMessage}
         </div> : null}
 
         </div>
