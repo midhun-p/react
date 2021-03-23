@@ -17,8 +17,8 @@ function Users() {
                     <div className="col-lg-4">
                         <div className="card card-div">
                             <img className="card-img-top" src={userLogo} alt="Card image cap" />
-                            <div class="card-body">
-                                <h5 class="card-title">{user.name}</h5>
+                            <div className="card-body">
+                                <h5 className="card-title">{user.name}</h5>
                                 <p className="card-text">{user.email}</p>
                                 <p className="card-text">{user.phone}</p>
                                 <p className="card-text">{user.website}</p>

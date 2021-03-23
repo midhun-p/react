@@ -6,11 +6,16 @@ function UserDetails() {
     const params = useParams();
     const userDetails = {
         name: '',
-        email:'',
-        phone:'',
-        website:'',
-        company:{
-            name:''
+        email: '',
+        phone: '',
+        website: '',
+        company: {
+            name: ''
+        },
+        address: {
+            street: '',
+            city: "",
+            zipcode: ''
         }
     }
     const [user, setuserDetails] = useState(userDetails);
@@ -23,23 +28,85 @@ function UserDetails() {
             })
     }, []);
     return (
-        <div>
-            <div className="row">
+        <>
+            <div className="row mt-30">
                 <div className="col-lg-4">
                     <div className="card card-div">
                         <img className="card-img-top" src={userLogo} alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">{user.name}</h5>
-                            <p className="card-text">{user.email}</p>
-                            <p className="card-text">{user.phone}</p>
-                            <p className="card-text">{user.website}</p>
-                            <p className="card-text">{user.company.name}</p>
+
+                    </div>
+                </div>
+                <div className="col-lg-8 mt-15">
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">Name</label>
+                                <h6 class="displayvalue">{user.name}</h6>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">Email</label>
+                                <h6 class="displayvalue">{user.email}</h6>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">Phone</label>
+                                <h6 class="displayvalue">{user.phone}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">Website</label>
+                                <h6 class="displayvalue">{user.website}</h6>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">Company</label>
+                                <h6 class="displayvalue">{user.company.name}</h6>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">Website</label>
+                                <h6 class="displayvalue">{user.website}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">street</label>
+                                <h6 class="displayvalue">{user.address.street}</h6>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">city</label>
+                                <h6 class="displayvalue">{user.address.city}</h6>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div class="form-group">
+                                <label class="blocklabel">zipcode</label>
+                                <h6 class="displayvalue">{user.address.zipcode}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div class="form-group">
                             <Link to={'/users/'} className="btn btn-primary">Go back</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
