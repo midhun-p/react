@@ -14,7 +14,7 @@ function Users() {
         <div>
             <div className="row">
                 {userList.map(user => (
-                    <div className="col-lg-4">
+                    <div className="col-lg-4" key={user.id}>
                         <div className="card card-div">
                             <img className="card-img-top" src={userLogo} alt="Card image cap" />
                             <div className="card-body">

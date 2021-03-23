@@ -27,14 +27,11 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a className="navbar-brand" href="#">GMS</a>
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li className="nav-item active">
+                    <li className="nav-item">
                         <Link to='/home' className="nav-link">Home</Link> 
                     </li>
                     <li className="nav-item">
                     <Link to='/users' className="nav-link">Users</Link> 
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">Disabled</a>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
