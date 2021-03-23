@@ -33,6 +33,9 @@ function Header() {
                     <li className="nav-item">
                     <Link to='/users' className="nav-link">Users</Link> 
                     </li>
+                    <li className="nav-item">
+                    <Link to='/programs' className="nav-link">Programs</Link> 
+                    </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
                     <button className="btn btn-success my-2 my-sm-0" type="submit">

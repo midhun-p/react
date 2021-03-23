@@ -13,6 +13,7 @@ import Header from './components/Header';
 // import Footer from './components/Footer';
 import Users from './components/Users';
 import UserDetails from './components/UserDetails';
+import Programs from './components/Programs';
 
 function App(props) {
   return (
@@ -26,6 +27,7 @@ function App(props) {
         <Route path="/register" component={Register} />
         <Route path="/users" component={Users} />
         <Route path="/user-details/:id" component={UserDetails} />
+        <Route path="/programs" component={Programs} />
         </div>
         {/* <Footer></Footer> */}
       </Router>
