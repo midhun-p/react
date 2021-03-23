@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+body{
+  font-family: 'Poppins', sans-serif !important;
+  font-size:15px;
+}
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -39,4 +45,24 @@
 
 .login-div{
   margin-top: 50px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  HEIGHT: 49px;
+}
+
+.btn-success a{
+  color: white !important;
+}
+.card-div{
+  width: 18rem;
+}
+.card{
+  margin: 15px 0 15px 0;
 }
