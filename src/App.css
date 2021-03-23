@@ -61,7 +61,7 @@ body{
   color: white !important;
 }
 .card-div{
-  width: 18rem;
+  width: 100%;
 }
 .card{
   margin: 15px 0 15px 0;
@@ -87,4 +87,14 @@ label.blocklabel {
 
 .mt-15{
   margin-top: 15px;
+}
+
+.btn-sm {
+  margin: 0 2px 0 0;
+}
+
+
+.tbl-img {
+  height: 50px !important;
+  width: 50px !important;
 }
